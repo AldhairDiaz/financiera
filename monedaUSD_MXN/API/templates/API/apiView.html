@@ -1,0 +1,31 @@
+{% extends 'API/index.html' %}
+{% block cabecera %}{% endblock cabecera %}
+
+{% block body %}
+<div>
+    <p><h3>
+        Para poder consumir esta api debe tener en cuenta que;
+    </h3></p>
+    <p>
+        Necesitara el Token que esta listado en esta pagina.
+    </p>
+    <p>
+        Hay un limite maximo de peticiones
+    </p>
+</div>
+<br>
+
+
+<div>
+    
+    <p>Esta es la informacion que obtendra en formato Json</p>
+    
+</div>
+<div>
+    {{bd}}
+</div>
+<br>
+<p>***Esta api solo obtiene el valor de la ultima fecha que ofrecen las apis de donde se obtiene la informacion.</p>
+{% endblock body %}
+
+</html>
